@@ -1,13 +1,71 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	background-size: 100%;
+	background-image: url('./Assets/images/weather.avif');
+	background-repeat: no-repeat;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}
+
+.inner {
+	position: relative;
+	left: 100px;
+	top: 20px;
+}
+
+.input {
+	padding: 10px;
+	border-radius: 10px;
+	border: none;
+	outline: none;
+}
+
+.hero {
+	display: flex;
+	align-items: center;
+}
+
+.box {
+	display: flex;
+	align-items: center;
+	margin-right: 100px;
+}
+
+.name {
+	font-size: 40px;
+	margin-bottom: 0;
+}
+
+.info {
+	font-size: 20px;
+	margin-top: 0;
+}
+
+.celci {
+	font-size: 50px;
+	font-weight: normal;
+	margin: 0 20px;
+}
+
+.btn {
+	width: 30px;
+	padding: 5px;
+	border: 1px solid transparent;
+	border-radius: 50%;
+	background-color: white;
+	font-size: 16px;
+}
+
+.btn + .btn {
+	margin-left: 10px;
 }
